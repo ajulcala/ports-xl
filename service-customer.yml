@@ -1,7 +1,7 @@
-server:  
-  port: ${PORT:0}
-  error:    
-    include-message: always
+server: 8011
+  port:  #${PORT:0}
+  #error:    
+    #include-message: always
 
 management:
   endpoints:
@@ -14,8 +14,8 @@ management:
 
 #EUREKA CUSTOMER
 eureka:
-  instance:
-    instance-id: ${spring.application.name}:${random.value}
+  #instance:
+    #instance-id: ${spring.application.name}:${random.value}
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
