@@ -1,5 +1,5 @@
-server: 8011
-  port:  #${PORT:0}
+server:
+  port: 8011 #${PORT:0}
   #error:    
     #include-message: always
 
