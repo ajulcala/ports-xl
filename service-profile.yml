@@ -5,7 +5,8 @@ server:
 
 #EUREKA CUSTOMER
 eureka:
-  #instance:
+  instance:
+    prefer-ip-address: true
     #instance-id: ${spring.application.name}:${random.value}
   client:
     service-url:
@@ -17,4 +18,4 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: dbprofile
+      database: dbprofile 
