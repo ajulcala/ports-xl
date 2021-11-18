@@ -1,7 +1,7 @@
 server:  
   port: 8059 #${PORT:0}
-  error:    
-    include-message: always
+  #error:    
+    #include-message: always
 
 #ACTUATOR
 management:
