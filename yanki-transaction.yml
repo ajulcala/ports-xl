@@ -1,9 +1,8 @@
 server:  
-  port: 8059 #${PORT:0}
+  port: 8060 #${PORT:0}
   error:    
     include-message: always
 
-#ACTUATOR
 management:
   endpoints:
     web:
@@ -29,7 +28,7 @@ spring:
   cloud:
     stream:
       bindings:
-        input:
+        output:
           destination: money-transaction
   redis:
     host: localhost
@@ -38,4 +37,4 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: yankiAccount
+      database: yanki_transaction
